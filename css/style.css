@@ -28,13 +28,13 @@ h3 {
 }
 
 .drawing img {
-    background-color: white;
+    background-color: rgb(179, 250, 179);
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 90%;
     border-radius: 0.5%;
-    padding: 0.5em;
+    padding: 0em;
     border: lightseagreen;
     border-style: solid;
     margin-top: 1em;
