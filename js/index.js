@@ -1,14 +1,4 @@
 
-const button1 = document.getElementById('slideL');
-
-button1.onclick = function () {
-  document.getElementById('container').scrollLeft += 350;
-};
-const button2 = document.getElementById('slideR');
-
-button2.onclick = function () {
-  document.getElementById('container').scrollLeft -= 350;
-};
 
 
 
@@ -103,5 +93,25 @@ if (amtScrolled > h1Top + h1Height) {
     window.addEventListener('load', theStateOfThings)
     window.addEventListener('scroll', theStateOfThings)
     window.addEventListener('resize', theStateOfThings)
+
+
+    function showTimeline() {
+        var contentDisplay = document.getElementById("showContent");
+        if (contentDisplay.style.display === "none") {
+            contentDisplay.style.display = "block";
+        } else {
+            contentDisplay.style.display = "none";
+        }
+      }
+    const button1 = document.getElementById('slideL');
+    
+    button1.onclick = function () {
+      document.getElementById('container').scrollLeft += 350;
+    };
+    const button2 = document.getElementById('slideR');
+    
+    button2.onclick = function () {
+      document.getElementById('container').scrollLeft -= 350;
+    };
 
    
