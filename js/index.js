@@ -64,19 +64,19 @@ if (amtScrolled > h1Top + h1Height) {
             let theId = $sec.getAttribute('id')
     
             if (top < winH && bottom > 0) {
-                infoForElement += `<li class="bold>${theId}</li>`
+                infoForElement += `<li>${theId}</li>`
             } else {
-                infoForElement += `<li class="bold"><a href="#${theId}">${theId}</a></li>`
+                infoForElement += `<li><a href="#${theId}">${theId}</a></li>`
             }
         }
     
         // Iterate through each matching eleemnt, call the checkOneSection function for each one
-        document.querySelectorAll('.moment').forEach(checkOneSection)
+        document.querySelectorAll('.yeearClass').forEach(checkOneSection)
         
     
         $yearBar.innerHTML = `            
 
-        <ol>${infoForElement}</ol>
+        <ol class="nav">${infoForElement}</ol>
 
          `;
 
