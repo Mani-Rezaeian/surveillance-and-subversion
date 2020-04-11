@@ -19,7 +19,7 @@ let year = document.getElementById('year').textContent
 let $titleBar = document.querySelector('.titleBar')
 let $yearBar = document.querySelector('.yearBar')
 let title = document.querySelector('h1').textContent
-let $btnTime = document.querySelector('.btnTime')
+
 
 
 window.addEventListener('scroll', event => {
@@ -42,14 +42,14 @@ if (amtScrolled > h1Top + h1Height) {
     console.log('H1 is off the top')
     $titleBar.classList.add(`show`)
     $yearBar.classList.add(`show`)
-    $btnTime.classList.add(`show`)
+    
     $titleBar.innerHTML = `${title}`;
     $yearBar.innerHTML = `${year}`;
 
 } else {
     $titleBar.classList.remove(`show`)
     $yearBar.classList.remove(`show`)
-    $btnTime.classList.remove(`show`)
+   
     $titleBar.innerHTML = ``;
 }
 

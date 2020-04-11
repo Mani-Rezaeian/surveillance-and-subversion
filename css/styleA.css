@@ -13,46 +13,6 @@ body {
     font-size: 1.2em;
 }
 
-
-
-
-#container {
-    width: 100%;
-    height: 100px;
-    border: 1px solid rgb(4, 148, 231);
-    overflow-x: scroll;
-    margin-left: 0em;
-  }
-  
-  #content {
-    height: 100px;
-    white-space: nowrap;
-  
-    background-color: rgb(132, 78, 139);
-  }
-
-
-  .btnTime {
-    background-color: white;
-    position: fixed;
-    bottom: 1em;
-    width: 100%;  
-    overflow: hidden;  
-
-    text-align: center;
-}
-
-#slideL {
-
-    align-items: flex-end;
-}
-
-#slideR {
-
-    align-items: flex-start;
-}
-  
-
 h1 {
     font-size: 1.8em;
     font-weight: 700;
@@ -61,6 +21,7 @@ h1 {
     transition: all 1s;
     margin-bottom: 0.5em;
 }
+
 h2 {
     font-size: 1.5em;
     font-weight: 700;
@@ -72,30 +33,40 @@ h3 {
 }
 
 .drawing img {
-    background-color: rgb(179, 250, 179);
+    background-color: white;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    width: 90%;
     border-radius: 0.5%;
-    padding: 0em;
+    padding: 0.5em;
     border: lightseagreen;
     border-style: solid;
-    margin-top: 1em;
-    margin-bottom: 1em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
 }
 
-.pngformat img {
-    background-color: rgb(179, 250, 179);
+.population img {
+    max-height: 10em;
+}
+
+img {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
-    border-radius: 0.5%;
-    padding: 0em;
     margin-top: 1em;
     margin-bottom: 1em;
+    max-width: 70%;
 }
+
+
+
+
+  @keyframes moveImage {
+      100% {
+        transform: translateX(calc(100vw + 350px));
+      }
+  }
 
 a {
     color: tomato;
@@ -111,13 +82,20 @@ address {
     font-weight: 700;
 }
 
+.white {
+    background-color: #ffffff;
+}
 
 .green {
     background-color: #b3fab3;
 }
 
-.white {
-    background-color: #ffffff;
+.pink {
+    background-color: #eecaf1;
+}
+
+.aqua {
+    background-color: #49e1ce;
 }
 
 .progressText {
@@ -170,28 +148,27 @@ address {
     width: 100%;
     height: 1.4em;
     overflow: hidden;
-    font-size:0.8em;
+    font-size: 0.8em;
     display: none;
     padding-left: 0.2em;
     padding-right: 0.2em;
     text-align: center;
 }
 
-
-
-.nav{
-    list-style:none;
-    margin:0;
-    padding:0;
-    text-align:center;
+.nav {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
 }
-.nav li{
-    display:inline;
+
+.nav li {
+    display: inline;
     padding-right: 0.2em;
 }
 
-.nav a{
-    display:inline-block;
+.nav a {
+    display: inline-block;
 }
 
 .hide {
@@ -222,14 +199,15 @@ address {
     height: 95%;
     font-size: 1.2em;
     padding: 1em;
+    -o-transition: all 10s;
+    -moz-transition: all 10s;
+    -webkit-transition: all 10s;
+    transition: all 10s;
 }
 
 .moment img {
     max-width: 95%;
-}
-
-.bold {
-    font-weight: 700;
+    
 }
 
 article footer {
@@ -243,13 +221,10 @@ footer {
 }
 
 .second {
-    align-self: auto; 
+    align-self: auto;
     margin: auto;
     max-width: 100%;
 }
-
- 
-
 
 @media screen and (min-width: 50em) {
     .header {
@@ -262,17 +237,21 @@ footer {
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
-
+    .moment img {
+        max-width: 80%;
+    }
     @media screen and (min-width: 90em) {
         h1 {
             font-size: 2.5em;
         }
         .masthead img {
-            max-width: 90%;
+            max-width: 80%;
         }
         .masthead p {
             width: 60%;
         }
+        .moment img {
+            max-width: 70%;
+        }
     }
 }
-©2020 GitHub, Inc.
