@@ -1,3 +1,17 @@
+
+const button1 = document.getElementById('slideL');
+
+button1.onclick = function () {
+  document.getElementById('container').scrollLeft += 50;
+};
+const button2 = document.getElementById('slideR');
+
+button2.onclick = function () {
+  document.getElementById('container').scrollLeft -= 50;
+};
+
+
+
 let $bar = document.querySelector('.progress')
 let $progressText = document.querySelector('.progressText')
 let $h1 = document.getElementById('heading')
@@ -5,6 +19,7 @@ let year = document.getElementById('year').textContent
 let $titleBar = document.querySelector('.titleBar')
 let $yearBar = document.querySelector('.yearBar')
 let title = document.querySelector('h1').textContent
+let $btnTime = document.querySelector('.btnTime')
 
 
 window.addEventListener('scroll', event => {
@@ -27,12 +42,14 @@ if (amtScrolled > h1Top + h1Height) {
     console.log('H1 is off the top')
     $titleBar.classList.add(`show`)
     $yearBar.classList.add(`show`)
+    $btnTime.classList.add(`show`)
     $titleBar.innerHTML = `${title}`;
     $yearBar.innerHTML = `${year}`;
 
 } else {
     $titleBar.classList.remove(`show`)
     $yearBar.classList.remove(`show`)
+    $btnTime.classList.remove(`show`)
     $titleBar.innerHTML = ``;
 }
 
@@ -86,3 +103,5 @@ if (amtScrolled > h1Top + h1Height) {
     window.addEventListener('load', theStateOfThings)
     window.addEventListener('scroll', theStateOfThings)
     window.addEventListener('resize', theStateOfThings)
+
+   
