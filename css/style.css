@@ -42,6 +42,23 @@ body {
 
 
 
+
+
+ 
+
+
+  .btnTime {
+    background-color: rgba(255, 255, 255, 0.3);
+    position: fixed;
+    bottom: 1em;
+    width: auto; 
+    height: 6.5em; 
+    overflow: hidden;  
+
+    text-align: center;
+}
+
+
 #container {
     width: 100%;
     height: 5em;
@@ -51,23 +68,12 @@ body {
   }
   
   #content {
-      
-    height: 4em;
+
+    height: 100%;
     white-space: nowrap;
     
   }
 
-
-  .btnTime {
-    background-color: rgba(255, 255, 255, 0.3);
-    position: fixed;
-    bottom: 1em;
-    width: 100%; 
-    height: 6.5em; 
-    overflow: hidden;  
-
-    text-align: center;
-}
 
   .btnsClass {
 
@@ -90,6 +96,8 @@ body {
     padding: 0.2em;
     border: none;
 }
+
+
   
 
 h1 {
@@ -301,7 +309,8 @@ footer {
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
-
+    
+  
 
     @media screen and (min-width: 90em) {
         h1 {
@@ -313,8 +322,9 @@ footer {
         .masthead p {
             width: 60%;
         }
+
+        
        
         
     }
 }
-©2020 GitHub, Inc.
