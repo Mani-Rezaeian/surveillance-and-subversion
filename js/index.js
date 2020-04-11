@@ -2,12 +2,12 @@
 const button1 = document.getElementById('slideL');
 
 button1.onclick = function () {
-  document.getElementById('container').scrollLeft += 50;
+  document.getElementById('container').scrollLeft += 350;
 };
 const button2 = document.getElementById('slideR');
 
 button2.onclick = function () {
-  document.getElementById('container').scrollLeft -= 50;
+  document.getElementById('container').scrollLeft -= 350;
 };
 
 
