@@ -47,14 +47,14 @@ body {
  
 
 
-  .btnTime {
-    background-color: rgba(255, 255, 255, 0.3);
+.btnTime {
+    background-color: rgba(255, 255, 255, 0.4);
     position: fixed;
     bottom: 1em;
     width: auto; 
-    height: auto 
+    height: auto;
+    margin: auto;
     overflow: hidden;  
-
     text-align: center;
 }
 
@@ -70,17 +70,12 @@ body {
   
  
 
-
-  .btnsClass {
-
-    background-color: rgb(179, 250, 179,);
-
-  }
+ 
 
 #slideL {
 
     align-items: flex-end;
-    background-color:  rgb(255,99, 71);
+    background-color:  rgba(255,99, 71, 0.8);
     padding: 0.2em;
     border: none;
 }
@@ -88,7 +83,7 @@ body {
 #slideR {
 
     align-items: flex-start;
-    background-color:  rgb(255,99, 71);
+    background-color:  rgba(255,99, 71, 0.8);
     padding: 0.2em;
     border: none;
 }
@@ -291,6 +286,19 @@ footer {
     max-width: 100%;
 }
 
+
+@media (max-width: 45em) {
+    #slideR {
+        width: 5em;
+        font-size: 0.5em;
+        
+    } 
+
+    #slideL {
+        width: 5em;
+        font-size: 0.5em;
+    } 
+}
  
 
 
@@ -306,7 +314,7 @@ footer {
         grid-template-columns: 1fr 1fr;
     }
     
-  
+    
 
     @media screen and (min-width: 90em) {
         h1 {
@@ -319,7 +327,7 @@ footer {
             width: 60%;
         }
 
-        
+       
        
         
     }
