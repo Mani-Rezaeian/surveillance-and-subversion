@@ -21,8 +21,12 @@
     background: rgb(228, 85, 60); 
   }
 
+  
 
 
+  html {
+    scroll-behavior: smooth;
+  }
 
 
 body {
@@ -30,6 +34,7 @@ body {
     font-family: 'Roboto mono', Arial, Helvetica, sans-serif;
     font-size: 1.2em;
     padding: 2em;
+   
 }
 
 .header {
